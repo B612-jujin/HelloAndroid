@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">HelloAndroid</string>
+    <string name="app_name">B612</string>
+    <string name="test_app_name">The City of Dreaming Books</string>
+    <string name="btn1">버튼을 클릭해보자!</string>
 </resources>

@@ -7,13 +7,62 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="165dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/test_app_name"
+        app:layout_constraintBottom_toTopOf="@+id/text1"
+        app:layout_constraintEnd_toEndOf="@+id/NameTextText"
+        app:layout_constraintStart_toStartOf="@+id/NameTextText"
+        app:layout_constraintTop_toBottomOf="@+id/NameTextText" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="177dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/btn1"
+        app:layout_constraintBottom_toTopOf="@+id/NameTextText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="143dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="190dp"
+        android:text="Switch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text1"
+        app:layout_constraintStart_toStartOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <EditText
+        android:id="@+id/NameTextText"
+        android:layout_width="279dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="이름 입력"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="@+id/btn1"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
